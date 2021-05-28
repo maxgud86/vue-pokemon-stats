@@ -172,7 +172,7 @@ var app = new Vue({
   },
   template: `
     <div class="app">
-      <h1>Pokemon App!</h1>
+      <h1>Pokemon Stats</h1>
       <pokemon-table
         :list="pokemonList"
         title="Best Pokemon Ever"
