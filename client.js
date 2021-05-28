@@ -89,7 +89,7 @@ var pokemonTable = Vue.component(
         <thead>
           <tr>
             <th
-              colspan="4"
+              colspan="5"
               align="center"
             >{{title}}</th>
           </tr>
