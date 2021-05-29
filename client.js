@@ -18,6 +18,8 @@ var pokemonTableRow = Vue.component(
         <td>{{pokemon.attack}}</td>
         <td>{{pokemon.defense}}</td>
         <td>{{pokemon.speed}}</td>
+        <td>{{pokemon.specialAttack}}</td>
+        <td>{{pokemon.specialDefense}}</td>
       </tr>
     `
   }
@@ -90,7 +92,7 @@ var pokemonTable = Vue.component(
         <thead>
           <tr>
             <th
-              colspan="6"
+              colspan="8"
               align="center"
             >{{title}}</th>
           </tr>
@@ -123,6 +125,16 @@ var pokemonTable = Vue.component(
             <pokemon-table-column-header
               label="Speed"
               name="speed"
+              @sort="emitSort"
+            ></pokemon-table-column-header>
+            <pokemon-table-column-header
+              label="Special Attack"
+              name="specialAttack"
+              @sort="emitSort"
+            ></pokemon-table-column-header>
+            <pokemon-table-column-header
+              label="Special Defense"
+              name="specialDefense"
               @sort="emitSort"
             ></pokemon-table-column-header>
           </tr>

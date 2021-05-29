@@ -7,6 +7,8 @@ var unDerpOnePokemon = function(inputPokemon){
     attack: inputPokemon.base['Attack'],
     defense: inputPokemon.base['Defense'],
     speed: inputPokemon.base['Speed'],
+    specialAttack: inputPokemon.base['Sp. Attack'],
+    specialDefense: inputPokemon.base['Sp. Defense'],
   };
 };
 var handleDataLoad = function (data){

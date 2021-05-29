@@ -60,4 +60,12 @@ var tableSortingMethods = {
     forward:createObjectSortingFunction('speed', sortNumberForward),
     backward:createObjectSortingFunction('speed', sortNumberBackward),
   },
+  specialAttack:{
+    forward:createObjectSortingFunction('specialAttack', sortNumberForward),
+    backward:createObjectSortingFunction('specialAttack', sortNumberBackward),
+  },
+  specialDefense:{
+    forward:createObjectSortingFunction('specialDefense', sortNumberForward),
+    backward:createObjectSortingFunction('specialDefense', sortNumberBackward),
+  },
 }
